@@ -34,6 +34,8 @@ class wdang(object):
                     self.driver.close()
                     time.sleep(1)
 
+                    self.driver = webdriver.Chrome()
+
                     self.driver.get(self.url)
                     time.sleep(1)
                 except:
